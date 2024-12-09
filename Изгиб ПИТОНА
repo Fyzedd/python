@@ -16,7 +16,7 @@ class GameObject:
 
     def __init__(self, x, y, body_color):
         """Инициализация объекта с координатами и цветом.
-        
+
         Args:
             x (int): координата X объекта.
             y (int): координата Y объекта.
@@ -27,7 +27,7 @@ class GameObject:
 
     def draw(self, surface):
         """Отрисовывает объект на экране.
-        
+
         Args:
             surface (pygame.Surface): поверхность, на которой будет отрисован объект.
         """
@@ -63,7 +63,7 @@ class Snake(GameObject):
 
     def update_direction(self, direction):
         """Обновляет следующее направление движения змейки.
-        
+
         Args:
             direction (tuple): новое направление в формате (dx, dy).
         """
@@ -97,7 +97,7 @@ class Snake(GameObject):
 
 def handle_keys(snake):
     """Обрабатывает нажатия клавиш для изменения направления змейки.
-    
+
     Args:
         snake (Snake): экземпляр змейки, для которой меняется направление.
     """
